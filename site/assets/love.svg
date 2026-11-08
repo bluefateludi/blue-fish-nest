@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 290" role="img" aria-label="喜欢你 原创通用鲸鱼示例">
+ <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffdfec"/><stop offset="1" stop-color="#e3f3ff"/></linearGradient><linearGradient id="whale" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#a9d3ff"/><stop offset="1" stop-color="#71aae9"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#80abd4" flood-opacity=".25"/></filter></defs>
+ <rect width="320" height="290" rx="25" fill="url(#b)"/>
+ <g fill="#fff" opacity=".7"><circle cx="34" cy="50" r="8"/><circle cx="275" cy="64" r="12"/><circle cx="287" cy="172" r="5"/><circle cx="49" cy="205" r="4"/></g>
+ <text x="57" y="93" font-size="34" fill="#85b2e6">♥</text><text x="260" y="115" font-size="25" fill="#ec9dba">✦</text>
+ <g filter="url(#s)"><path d="M223 143 Q250 123 270 106 Q277 123 267 142 Q290 151 287 171 Q266 175 239 157" fill="#7cb2ee" stroke="#5e9adf" stroke-width="2"/>
+ <ellipse cx="158" cy="155" rx="99" ry="74" fill="url(#whale)"/><path d="M65 168 Q79 196 157 196 Q233 200 253 166 Q232 233 153 229 Q73 221 65 168" fill="#fff" opacity=".96"/>
+ <ellipse cx="108" cy="164" rx="14" ry="7" fill="#f8a9c1" opacity=".74"/><ellipse cx="210" cy="164" rx="14" ry="7" fill="#f8a9c1" opacity=".74"/><path d="M121 146 q8 9 16 0" stroke="#274f80" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M177 146 q8 9 16 0" stroke="#274f80" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M150 166 q9 15 20 0" stroke="#244d7f" stroke-width="4.5" fill="none" stroke-linecap="round"/><path d="M159 78 Q149 62 156 53 Q165 62 161 77" fill="#81b9f0" stroke="#64a5e6" stroke-width="3" stroke-linecap="round"/></g>
+ <rect x="84" y="236" width="152" height="37" rx="19" fill="white" opacity=".92"/><text x="160" y="260" font-size="18" text-anchor="middle" font-weight="bold" fill="#608dbf" font-family="'Noto Sans CJK SC','Microsoft YaHei',sans-serif">喜欢你</text>
+ </svg>

@@ -1,0 +1,9 @@
+.playwright-cli/
+output/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.vercel/
+.wrangler/

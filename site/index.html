@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f9ff" />
+  <meta name="description" content="大肥鱼的治愈小窝，收集每天的小小快乐。可爱表情包、情绪分类和随机小鱼。" />
+  <title>大肥鱼的治愈小窝 · 今天也要开心呀</title>
+  <link rel="icon" href="assets/happy.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="gallery-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="deco deco-a" aria-hidden="true"></div><div class="deco deco-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="大肥鱼的治愈小窝首页"><span class="brand-mark">🐳</span><span>大肥鱼<span class="brand-dim">の</span>小窝</span></a>
+    <nav class="nav" aria-label="页面导航"><a href="#gallery">表情包</a><a href="#about">关于小窝</a></nav>
+    <button id="favoritesNav" class="header-like" type="button" aria-pressed="false">♡ <span>我的喜欢</span> <span id="favCount">0</span></button>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero" aria-label="欢迎来小窝">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ 一点点蓝色的快乐 ✦</span>
+        <h1>今天也要被<br /><em>大肥鱼</em>治愈一下 ♡</h1>
+        <p>不开心也没关系呀。来这里摸摸鱼，<br class="desktop-br" />收集一些软乎乎的小快乐吧。</p>
+        <div class="hero-actions"><a class="primary-btn" href="#gallery">去看小鱼 <span>↗</span></a><button id="randomButton" type="button" class="ghost-btn">🎲 随机一鱼</button></div>
+        <div class="hero-small">✧ 不用登录 · 免费浏览 · 慢慢逛 ✧</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"><span class="bubble bubble-1">♡</span><span class="bubble bubble-2">✿</span><span class="bubble bubble-3">✧</span><img src="assets/imported/gengjing-011.webp" alt="" /><div class="hero-note">今天也要开心呀 ✿</div></div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-heading"><div><span class="mini-tag">THE LITTLE GALLERY</span><h2>小鱼表情收藏馆 <span>✦</span></h2><p>50 张静态表情 + 30 张 GIF 动图，挑一张符合现在心情的小鱼吧～</p></div><span class="gallery-deco">🐚 ✧ 🫧</span></div>
+      <div id="formatFilters" class="format-filters" role="group" aria-label="图片类型"></div>
+      <div class="filter-bar"><div id="filters" class="pills" role="group" aria-label="心情分类"></div><label class="searchbox"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜索小鱼的心情…" aria-label="搜索表情包" autocomplete="off" /></label></div>
+      <div class="resultbar"><span id="resultCount">加载中…</span><button id="clearFilters" class="text-btn" type="button">清空筛选 ×</button></div>
+      <div id="stickerGrid" class="sticker-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty" hidden><div>🐳</div><h3>小鱼游去别的地方啦…</h3><p>换个心情关键词再找找吧。</p><button id="emptyReset" class="ghost-btn" type="button">看看所有小鱼</button></div>
+    </section>
+
+    <section class="daily-card" id="about"><div class="daily-icon">🫧</div><div><h2>来自小鱼的一句话</h2><p>“偶尔摸鱼也没关系，今天的你已经很努力啦。”</p></div><span>✦ DAILY WHALE NOTE</span></section>
+    <footer><div><strong>🐳 大肥鱼の小窝</strong><p>一个非官方的可爱治愈系同人表情包展示小站。</p></div><div class="footer-detail"><p>图片收录自 <a href="https://aigengtu.com/" target="_blank" rel="noopener noreferrer">梗鲸</a> 与 <a href="https://xn--pssy23gqgbz2d718b.com/gifs.html" target="_blank" rel="noopener noreferrer">蓝色大肥鱼开放档案</a>。</p><p>非官方同人展示，版权归原作者；逐图来源与授权状态见预览。</p></div><span>Made with ♡ and bubbles</span></footer>
+  </main>
+
+  <div id="modal" class="modal" hidden><div class="modal-backdrop" data-close="1"></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="closeModal" class="modal-close" aria-label="关闭预览" type="button">×</button><div class="modal-image-wrap"><img id="modalImage" alt="" /></div><div class="modal-body"><div class="modal-heading"><div><div id="modalMood" class="modal-kicker"></div><h2 id="modalTitle"></h2></div><button id="modalFav" type="button" class="heart-action" aria-label="收藏当前表情包">♡</button></div><p id="modalDesc" class="modal-desc"></p><p id="modalCredit" class="modal-credit"></p><div class="source-links"><a id="sourceLink" href="#" target="_blank" rel="noopener noreferrer">查看来源 ↗</a><a id="licenseLink" href="#" target="_blank" rel="noopener noreferrer">授权说明 ↗</a></div><div class="modal-actions"><a id="downloadLink" class="primary-btn" download href="#">↓ 保存这条小鱼</a><button class="ghost-btn" id="nextButton" type="button">再来一张 ↗</button></div></div></div></div>
+</body>
+</html>
