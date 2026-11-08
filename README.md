@@ -58,10 +58,10 @@ python tools/import_gallery.py
 
 ## 部署
 
-静态服务根目录为 `site`，无需构建。GitHub Pages 发布配置已准备，尚未创建远程仓库或上线。确认发布后，GitHub Actions 会在 `main` 分支更新时自动发布。
+静态服务根目录为 `site`，无需构建。GitHub Pages 已启用。GitHub Actions 会在 `main` 分支更新时自动发布，发布进度可在仓库的 Actions 页面查看。
 
-- 计划网站（尚未上线）：https://bluefateludi.github.io/blue-fish-nest/
-- 计划仓库（尚未创建）：https://github.com/bluefateludi/blue-fish-nest
+- 网站：https://bluefateludi.github.io/blue-fish-nest/
+- 仓库：https://github.com/bluefateludi/blue-fish-nest
 - 发布内容仅为 `site/`，不包含本地截图、检查脚本输出和缓存。
 
 ## 本次验证
